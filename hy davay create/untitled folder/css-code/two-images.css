@@ -1,0 +1,65 @@
+.two-images{
+  height: 370px;
+  width: 1360px;
+  margin: 0px 40px;
+  padding: 0px 0px 60px;
+  display: flex;
+}
+.two-images-blog{
+  height: 310px;
+  width: 645px;
+  margin-right: 30px;
+  background-color: rgb(255, 206, 8);
+  color: white;
+  display: flex;
+}
+.two-images-blog-content-text{
+  margin: 0px 30px 0px 0px;
+  padding: 30px 50px 30px 350px;
+}
+.two-images-blog-img{
+  height: 310px;
+  width: 322px; 
+  position: absolute;
+}
+.two-images-blog-title{
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+
+}
+.two-images-blog-title-2{
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Proxima Nova ExCn",Arial,sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: white;
+}
+.two-images-blog-text{
+  font-size: 15px;
+  line-height: 34px;
+  margin: 0px 0px 1px;
+}
+.two-images-blog-button{
+  background-color: black;
+  color: rgb(255, 255, 255);
+  height: 40px;
+  width: 245px;
+  padding: 0px 10px;
+  margin: 24px 0px 20px;
+  box-shadow: 2px 4px 7px rgb(34 34 34 / 60%);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.two-images-blog1{
+  height: 310px;
+  width: 645px;
+  margin-right: 30px;
+  background-color: rgb(116, 2, 255);
+  color: white;
+  display: flex;
+}

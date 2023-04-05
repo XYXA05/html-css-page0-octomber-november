@@ -1,0 +1,67 @@
+.head-glavnaya{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(245, 229, 229, 0.827);
+}
+.left-selecion-glavnaya{
+  display: flex;
+  height: 30px;
+  width: 350px;
+  justify-content: space-between;
+  color: black;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+} 
+.Shoes,
+.Clothing,
+.Accessories,
+.Discover-New,
+.Brands{
+  border: none;
+  font-family:  'Lora', serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+.right-selection-glavnaya{
+  height: 55px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(245, 229, 229, 0.827);
+  margin-left: 20px;
+}
+.search-bar{
+  padding: 0;
+  color: gray;
+  border: none;
+  cursor: pointer;
+  display: inherit;
+  margin-top: 20px;
+  background-color: rgba(245, 229, 229, 0.827);
+}
+.search-icon{
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: -5px; 
+  background-color: rgba(245, 229, 229, 0.827);
+}
+.Personal-Area{
+  cursor: pointer;
+  border: none;
+  font-family:  'Lora', serif;
+  font-size: 13px;
+  background-color: rgba(245, 229, 229, 0.827);
+}
+.favorite-icon,
+.shopping-icons{
+  height: 25px;
+  width: 25px;
+  display: inherit;
+  margin-top: 15px;
+  cursor: pointer;
+}

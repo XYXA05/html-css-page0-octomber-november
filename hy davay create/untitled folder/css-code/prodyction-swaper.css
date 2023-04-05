@@ -1,0 +1,123 @@
+.prodyction-swaper{
+  height: 459px;
+  width: 1440px;
+  padding-bottom: 23px;
+  margin-bottom: 60px;
+}
+.swaper-prodyction-cange{
+  height: 36px;
+  width: 1360px;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  margin-top: 45px;
+}
+.swaper-buttom-prodyction{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 7px 25px;
+  border-bottom: 2px solid #f2f2f2;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+}
+.swaper-buttom-prodyction-activate{
+  font-weight: bold;
+}
+.swaper-buttom-prodyction::after{
+  content: "";
+  display: block;
+  height: 2px;
+  background: #f2f2f2;
+  position: absolute;
+  width: 70%;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  margin: auto;
+  transition: .2s ease 0s;
+}
+.swaper-prodyction-catalog{
+  height: 330px;
+  width: 1360px;
+  background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+.swaper-prodyction-catalog::-webkit-scrollbar{
+  display: none;
+}
+.swaper-prodyction-catalog_swaper2{
+  background-color: #fff;
+  min-width: 100%;
+  min-height: 50px;
+}
+.swaper-prodyction-catalog_swaper2{display: flex;}
+
+.swaper-prodyction-catalog_swaper2--item2{
+  background-color: #ffffff;
+  min-width: 90px;
+  margin: 20px;
+}
+.swaper-buttom-prodyction-img-pass{
+  height: 240px;
+  width: 240px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+.text-prodyction{
+  display: block;
+  height: 35px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.30;
+  overflow: hidden;
+  width: 240px;
+}
+
+
+
+
+
+.swaper-prodyction-catalog1{
+   height: 330px;
+  width: 1360px;
+  background-color: #ffffff;
+  margin: 0;
+   display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+   align-items: center;
+  overflow-x: auto;
+}
+.swaper-prodyction-catalog1::-webkit-scrollbar{
+  display: none;
+}
+
+
+.swaper-prodyction-catalog2{
+  height: 330px;
+  width: 1360px;
+  background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+.swaper-prodyction-catalog2::-webkit-scrollbar{
+  display: none;
+}

@@ -1,0 +1,84 @@
+.header-miny{
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: inset;
+
+}
+.left-selection{
+  height: 20px;
+  display: flex;
+}
+.Region-selection{
+  display: flex;
+  height: 20px;
+  font-family:  'Lora', serif;
+  font-size: 13px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.20s;
+  vertical-align: top;
+  transition: backround-color 0.20s,  color 0.20s;
+}
+.Region-selection:hover{
+  color: gray;
+}
+.Region-selection:active{
+  opacity: 0.7s;
+  display: flex;
+}
+.icons1{
+  height: 22px;
+}
+.middle-selection{
+  height: 20px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  font-family:  'Lora', serif;
+  font-size: 14px;
+  max-width: 600px;
+  flex: 1;
+  cursor: pointer;
+}
+.phone{
+  font-family: 'Lora', serif;
+  font-size: 15px;
+} 
+.Shops-button{
+  position: relative;
+  display: inline-block;
+}
+.Shops-button .tooltip{
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -50px;
+  }
+.Shops-button .tooltip::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  cursor: pointer;
+}
+.Shops-button:hover .tooltip{
+  visibility: visible;
+}

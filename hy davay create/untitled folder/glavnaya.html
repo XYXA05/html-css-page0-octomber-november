@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> shop </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css-code/header-miny.css">
+    <link rel="stylesheet" href="css-code/header-medium.css">
+    <link rel="stylesheet" href="css-code/head-glavnaya.css">
+    <link rel="stylesheet" href="css-code/clash.css"> 
+    <link rel="stylesheet" href="css-code/swaper.css">
+    <link rel="stylesheet" href="css-code/prodyction-swaper.css">
+    <link rel="stylesheet" href="css-code/main.css">
+    <link rel="stylesheet" href="css-code/object.css">
+    <link rel="stylesheet" href="css-code/blog.css">
+    <link rel="stylesheet" href="css-code/two-images.css">
+    <link rel="stylesheet" href="css-code/servis.css">
+    <link rel="stylesheet" href="css-code/last-glavna.css">
+
+    <script>
+      function onSearchClick() {
+        console.log('Inside');
+        const element = document.getElementById("search-expand");
+        element.classList.remove("hidden-10");
+        const navbar = document.getElementById("navbar");
+        navbar.classList.add("hidden-10");
+      }
+    </script>
+    <script>
+      function closeClick() {
+        console.log('Inside');
+        const element = document.getElementById("search-expand");
+        element.classList.add("hidden-10");
+        const navbar = document.getElementById("navbar")
+        navbar.classList.remove("hidden-10")
+      }
+    </script> 
+    <script>
+      function Shoes(){
+        const shoes = document.getElementById("ClothesID");
+        const accessories = document.getElementById("AccessoriesID");
+        shoes.classList.add("hidden-10");
+        accessories.classList.add("hidden-10");
+
+        const clothes = document.getElementById("ShoesID");
+        clothes.classList.remove("hidden-10");
+      }
+    </script>
+    <script>
+      function Clothes(){
+        // First, hide Shoes and Accessories
+        const shoes = document.getElementById("ShoesID");
+        const accessories = document.getElementById("AccessoriesID");
+        shoes.classList.add("hidden-10");
+        accessories.classList.add("hidden-10");
+
+        // Second, show Clothes
+        const clothes = document.getElementById("ClothesID");
+        clothes.classList.remove("hidden-10");
+
+        /*
+        NOT WRAYTE THES COD !!!!!!!!!!!
+        console.log('Inside')
+        const element = document.getElementById("ClothesID")
+        element.classList.remove("swaper-prodyction-catalog")
+        const navbar = document.getElementById("swaper-prodyction-catalog")
+        navbar.classList.add("navbar0","navbar2")
+        */
+        }
+    </script>
+    <script>
+      function Accessories(){
+        const shoes = document.getElementById("ClothesID");
+        const accessories = document.getElementById("ShoesID");
+        shoes.classList.add("hidden-10");
+        accessories.classList.add("hidden-10");
+
+        const clothes = document.getElementById("AccessoriesID");
+        clothes.classList.remove("hidden-10");
+      }  
+    </script>
+    </head>
+  <body>
+      <header class="header-miny">
+        <div class="left-selecion">
+          <button class="Region-selection">Region selection
+          <img class="icons1" src="icons/icons1.svg"></button>
+        </div>
+        <div class="middle-selection">
+          <div class="Shops-button">Shops
+            <div class="tooltip">markit st.
+              lansing st.
+            </div>    
+          </div>
+          <div class="Shipping-and-payment-button">Shipping and payment</div>
+          <div class="Where-is-my-order-button">Where is my order</div>
+          <div class="Exchange-and-return-button">Exchange and return</div>
+          <div class="Gift-Certificate-button">Gift Certificate</div>
+        </div>
+        <div class="right-selection">
+          <div class="phone">+1 123 2242 34</div>
+        </div>      
+      </header>
+    <header class="header-medium">
+      <div class="left-header-medium">
+        <button class="Mens">Mens</button>
+        <button class="Womens">Women</button>
+        <button class="children">children</button>
+      </div>
+      <div class="middle-selection-medium">
+        <img class="logo" src="icons/logo.svg">
+      </div>
+      <div class="right-selectiuon-medium">
+        <button class="Snicker-Spa">Snicker Spa</button>
+        <button class="Sneaker-Blog">Sneaker Blog</button>
+        <button class="News">News</button>  
+      </div>
+    </header>
+    <header class="head-glavnaya" id="navbar">
+      <div class="left-selecion-glavnaya">
+          <div class="Shoes">Shoes</div>
+          <div class="Clothing">Clothing</div>
+          <div class="Accessories">Accessories</div>
+          <div class="Discover-New">Discover New</div>
+          <div class="Brands">Brands</div>
+      </div>
+      <div class="right-selection-glavnaya" id="q1" >
+        <button class="search-bar" onclick="onSearchClick()">searching?
+          <img class="search-icon" src="icons/search.svg"></button>
+        <button class="Personal-Area">Personal Area</button>  
+        <img class="favorite-icon" src="icons/favorite.svg">
+        <img class="shopping-icons" src="icons/shopping.svg">
+      </div>
+      <!-- hidden -->
+    </header> 
+
+    <div class="hidden-10" id="search-expand"> 
+      <div class="search_bar_class">
+        <input class="input" type="text" placeholder="wath you find?">
+        <div class="search-bar-class-left">
+          <button class="search-img1">
+            <img class="icons11" src="icons/search.svg">
+          </button>
+          <button class="close" onclick="closeClick()">
+            <img class="close-img" src="icons/close_FILL0_wght400_GRAD0_opsz48.svg">
+          </button>
+          <div class="result">
+            <div class="result_sidebar">
+              <div class="result-text1">Popular queries</div>
+              <div class="result-text">nike</div>
+              <div class="result-text">jordan</div>
+              <div class="result-text">adidas</div>
+              <div class="result-text">nike forse</div>
+              <div class="result-text">converse</div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 288px; width: 1424px; margin-top: 35px;">
+      <button class="button-img1">
+        <img style="height: 288px; width: 1424px;" src="/imeges/glavnaya.jpg">
+      </button>
+    </div>
+    
+      <main>
+        <section class="clash">
+          <img class="clash1-foto" src="/imeges/adidas.jpg">
+          <img class="clash1-foto" src="/imeges/puma.jpg">
+          <img class="clash1-foto" src="/imeges/vans.jpg">  
+            <div class="fyndament">
+              <div class="clash-1">adidas Ozweego Meta</div>
+              <div class="clash-2">Bold design inspired by the 90s</div>
+              <button class="clash3">watch</button>
+            </div>
+            <div class="fyndament">
+              <div class="clash-1">Discover new things with PUMA outfits</div>
+              <div class="clash-2">Discover new</div>
+              <button class="clash3">watch</button>
+            </div>
+            <div class="fyndament">
+              <div class="clash-1">A true street style legend</div>
+              <div class="clash-2">Vans Old Skool </div>
+              <button class="clash3">watch</button>
+            </div>
+        </section>
+      </main>
+      <section class="swaper">
+        <div class="swaper2">
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/adidas-swap.svg"><div class="text-swap">origial adidas</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/puma-swap.svg"><div class="text-swap">Puma</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/rebook.svg"><div class="text-swap"> Reebook </div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/vans-swap.svg"><div class="text-swap">Vans</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/new-balanse-swaper.svg"><div class="text-swap">New Balanse</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/nortthefase-swaper.svg"><div class="text-swap">The North Fase</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/convers-swap.svg"><div class="text-swap">Converse</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/nike-swaper.svg"><div class="text-swap">Nike</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/gordan-swaper.svg"><div class="text-swap">Jordan</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/tomi-djins-swap.svg"><div class="text-swap">Tommy Jeans</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/campion-swap.svg"><div class="text-swap">Campion</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/halan-paker-swap.svg"><div class="text-swap">Helly Hansen</div></div>
+          <div class="swaper1--item"><img class="swap-img"  src="/imeges/aespark-swap.svg"><div class="text-swap">Eastpak</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/ugg-swap.svg"><div class="text-swap">UGG</div></div>
+          <div class="swaper1--item"><img class="swap-img" src="/imeges/timberland-swap.svg"><div class="text-swap">Timberland</div></div>
+        </dib>    
+      </section>
+      <div style="height: 288px; width: 1424px; margin-top: 1px;">
+        <button style="border-style: none; background-color: white;">
+          <img style="height: 100%; width: 100%; 
+          opacity:0.8;
+          -moz-opacity:0.7;
+          filter: alpha(opacity=80) rgb(75, 72, 72);
+          -khtml-opacity: 0.5;
+          background-color:rgb(24, 9, 9)" src="/imeges/glavnaya2.jpg">
+        </button>
+      <div class="prodyction-swaper">
+        <div class="swaper-prodyction-cange">
+          <button class="swaper-buttom-prodyction" onclick="Shoes()">Shoes</button>
+          <button class="swaper-buttom-prodyction" onclick="Clothes()">Clothes</button>
+          <button class="swaper-buttom-prodyction" onclick="Accessories()">Accessories</button>
+        </div>
+        <div style="margin: 35px 0; height: 330px; width: 1440px; display: flex; align-items: center; flex-direction: column;">
+          <div class="swaper-prodyction-catalog" id="ShoesID" id="navbar0">
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/1.jpeg"><div class="text-prodyction">origial adidas</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/2.jpeg"><div class="text-prodyction">origial adidas</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/3.jpeg"><div class="text-prodyction">origial adidas</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/4.jpeg"><div class="text-prodyction">origial adidas</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/5.jpeg"><div class="text-prodyction">origial adidas</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/6.jpeg"><div class="text-prodyction">origial adidas</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/7.jpeg"><div class="text-prodyction">origial adidas</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/8.jpeg"><div class="text-prodyction">origial adidas</div></div>
+          </div>
+          <div class="swaper-prodyction-catalog hidden-10" id="ClothesID" id="navbar1">
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/shorts1.jpeg"><div class="text-prodyction">Men's T-shirt Street Beat & The Batman</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/shorts2.jpeg"><div class="text-prodyction">Men's T-shirt Street Beat & The Batman</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/shorts3.jpeg"><div class="text-prodyction">Men's Street Beat & The Graphic T-Shirt</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/shorts4.jpeg"><div class="text-prodyction">Men's T-shirt Street Beat & The Batman</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/shorts5.jpeg"><div class="text-prodyction">Men's T-shirt Street Beat & The Batman</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/shorts6.jpeg"><div class="text-prodyction">Men's T-shirt Street Beat & The Batman</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/choes1q.jpeg"><div class="text-prodyction">Men's T-shirt Street Beat & The Batman</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/choes2q.jpeg"><div class="text-prodyction">Men's T-shirt Street Beat & The Batman</div></div>
+          </div>
+          <div class="swaper-prodyction-catalog hidden-10" id="AccessoriesID" id="navbar2">
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/Accessories0.jpeg"><div class="text-prodyction">Gloves The North Face Etip Recycled Glove</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/Accessories1.jpeg"><div class="text-prodyction">Перчатки The North Face Etip Recycled Glove</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/Accessories2.jpeg"><div class="text-prodyction">Street Beat Beanie Hat</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/Accessories3.jpeg"><div class="text-prodyction">Backpack adidas Originals Adicolor Small</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/Accessories4.jpeg"><div class="text-prodyction">Jordan Diamond Backpack</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/Accessories5.jpeg"><div class="text-prodyction">adidas Originals Adicolor Archive Belt Bag</div></div>
+            <div class="swaper-prodyction-catalog_swaper2--item2"><img class="swaper-buttom-prodyction-img-pass" src="/imeges1/Accessories6.jpeg"><div class="text-prodyction">adidas Originals Unite Waistbag</div></div>
+          </div>
+        </div>  
+      </div>
+      <div class="object">
+        <div class="object-container">
+          <div class="object-container-block">
+            <div class="object-container-block1">
+              <img class="object-container-block-img" src="/imeges1/contayner.png">  
+              <div class="object-container-block-click">SHOES</div>
+            </div> 
+            <div class="object-container-block1">
+              <img class="object-container-block-img" src="/imeges1/odezda.png">  
+              <div class="object-container-block-click">CLOTHER</div>
+            </div> 
+            <div class="object-container-block1">
+              <img class="object-container-block-img" src="/imeges1/acsesyar.png">  
+              <div class="object-container-block-click">ACCESSO</div>
+            </div> 
+          </div>
+          <div class="object-container-text">
+            <div class="object-container-text1">They are looking for us</div>
+            <div class="object-container-text-two">
+              <button class="object-container-text-button">nike</button>
+              <button class="object-container-text-button">jordan</button>
+              <button class="object-container-text-button">adidas</button>
+              <button class="object-container-text-button">nike forse</button>
+              <button class="object-container-text-button">converse</button>
+              <button class="object-container-text-button">vans</button>
+              <button class="object-container-text-button">nike air fore 1</button>
+              <button class="object-container-text-button">the notrh face</button>
+              <button class="object-container-text-button">sneakers nike</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog">
+        <div class="blog-container">
+          <div class="blog-container-glavhiy-text">SNEAKER BLOG</div>
+          <div class="blog-container-glavhiy-button">
+            <button class="blog-container-glavhiy-button-text">#encyclopedia</button>
+            <button class="blog-container-glavhiy-button-text">#adidas</button>
+            <button class="blog-container-glavhiy-button-text">#Asics</button>
+            <button class="blog-container-glavhiy-button-text">#Nike</button>
+            <button class="blog-container-glavhiy-button-text">#Converse</button>
+            <button class="blog-container-glavhiy-button-text">#Jordan Brand</button>
+          </div>
+        </div>
+        <div class="blog-cards">
+          <img class="blog-cards-img-glavnaya" src="/imeges1/cards1.jpeg">
+          <div class="blog-cards-img-glavnaya-text">
+            <div class="blog-cards-img-glavnaya-text-title">Model history: adidas Superstar</div>
+            <div class="blog-cards-img-glavnaya-text-title-1">A whole era in street and sports culture has passed in the legendary "superstars" on their feet</div>
+          </div>
+          <div class="blog-cards-2">
+            <img class="blog-cards-img" src="/imeges1/blog2.jpeg">
+            <div class="tegs">#Encyclopedia  #Forum</div>
+            <div class="blog-cards-img-glavnaya-text-title-01">Model history: adidas Forum</div>
+            <div class="blog-cards-img-glavnaya-text-title-02">Inspired by the 80s, the iconic silhouette returns with a fresh and bold design.</div>
+          </div>
+          <div class="blog-cards-2">
+            <img class="blog-cards-img" src="/imeges1/blog3.jpeg">
+            <div class="tegs">#Encyclopedia  #Forum</div>
+            <div class="blog-cards-img-glavnaya-text-title-01">Herschel Supply Co.</div>
+            <div class="blog-cards-img-glavnaya-text-title-02">The story of brothers whose backpacks are known to the whole world</div>
+          </div>
+          <div class="blog-cards-2">
+            <img class="blog-cards-img" src="/imeges1/blog4.jpeg">
+            <div class="tegs">#Encyclopedia  #Forum</div>
+            <div class="blog-cards-img-glavnaya-text-title-01">The Prototype</div>
+            <div class="blog-cards-img-glavnaya-text-title-02">Sneakers we never saw</div>
+          </div>
+          <div class="blog-cards-2">
+            <img class="blog-cards-img" src="/imeges1/blog5.jpeg">
+            <div class="tegs">#Encyclopedia  #Forum</div>
+            <div class="blog-cards-img-glavnaya-text-title-01">Nike Air Max Day</div>
+            <div class="blog-cards-img-glavnaya-text-title-02">March 26 is the traditional Air Max Day in the sneakerhead calendar</div>
+          </div>
+          <div class="blog-cards-2">
+            <img class="blog-cards-img" src="/imeges1/blog6.jpeg">
+            <div class="tegs">#Encyclopedia  #Forum</div>
+            <div class="blog-cards-img-glavnaya-text-title-01">LeBron James Film Career Guide</div>
+            <div class="blog-cards-img-glavnaya-text-title-02">Great athlete off the court</div>
+          </div>
+          <div class="blog-cards-2">
+            <img class="blog-cards-img" src="/imeges1/blog7.jpeg">
+            <div class="tegs">#Encyclopedia  #Forum</div>
+            <div class="blog-cards-img-glavnaya-text-title-01">Spring is coming!</div>
+            <div class="blog-cards-img-glavnaya-text-title-02">Chamomile-chamomile-chamomile</div>
+          </div>
+          <div class="blog-cards-2">
+            <img class="blog-cards-img" src="/imeges1/blog8.jpeg">
+            <div class="tegs">#Encyclopedia  #Forum</div>
+            <div class="blog-cards-img-glavnaya-text-title-01">Sneakers and Love</div>
+            <div class="blog-cards-img-glavnaya-text-title-02">Valentine's Day is an amazing, very gentle and warm holiday.</div>
+          </div>
+          <div class="blog-cards-2">
+            <img class="blog-cards-img" src="/imeges1/blog9.jpeg">
+            <div class="tegs">#Encyclopedia  #Forum</div>
+            <div class="blog-cards-img-glavnaya-text-title-01">Commercial break: PUMA Forever Faster</div>
+            <div class="blog-cards-img-glavnaya-text-title-02">"Forever Faster" is the slogan of the PUMA brand, introduced in the mid-2010s and reflects the DNA of one of the leaders in the sports segment</div>
+          </div>
+        </div>
+        <button class="more-button">more posts</button>
+        <div class="blog-cards-3">
+          <div class="blog-cards-3-info">
+            Subscribe to Street Beat on Tik Tok, Youtube, VKontakte and Telegram, so as not to miss the latest posts, as well as news from our stores, sales and invitations to closed Street Beat events.
+          </div>
+          <div class="social-icons">
+            <img class="social-icons-img" src="/imeges1/icons8-tiktok.svg">
+            <img class="social-icons-img" src="/imeges1/icons8-youtube.svg">
+            <img class="social-icons-img" src="/imeges1/icons8-vk-circled-30.svg">
+            <img class="social-icons-img" src="/imeges1/icons8-telegram.svg">
+          </div>
+        </div>
+      </div>
+      <div class="two-images">
+        <div class="two-images-blog">
+          <img class="two-images-blog-img" src="/imeges1/two-images-blog1.jpeg">
+          <div class="two-images-blog-content-text">
+            <div class="two-images-blog-title">STREET BEAT PODCAST</div>
+            <div class="two-images-blog-title-2">New releases Hey yo!</div>
+            <div class="two-images-blog-text">Hey, the second episode of our Lightbulb Podcast Special Series is out, where we talk about NIGO, the creators of BAPE and Human Made.</div>
+            <button class="two-images-blog-button">Listen</button>
+          </div>
+        </div>
+        <div class="two-images-blog1">
+          <img class="two-images-blog-img" src="/imeges1/two-images-blog2.png">
+          <div class="two-images-blog-content-text">
+            <div class="two-images-blog-title">DRY CLEANING OF SNEAKERS</div>
+            <div class="two-images-blog-title-2">Our dry cleaning - your clean sneakers</div>
+            <div class="two-images-blog-text">Here your sneakers will be qualitatively and carefully cleaned using professional equipment.</div>
+            <button class="two-images-blog-button">To know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="servis">
+        <div class="servis-container">
+          <div class="servis-container-title">Delivery in Moscow</div>
+          <div class="servis-container-text">Standard delivery from 3 days - from 500 rubles.</div>
+          <div class="servis-container-text">Express delivery day-to-day - 600 rubles. (within the Moscow Ring Road)</div>
+          <div class="servis-container-text">Pickup from the nearest store - free of charge if the goods are presented in stores in your city</div>
+          <div class="servis-container-link">More</div>
+        </div>
+        <div class="servis-container">
+          <div class="servis-container-title">Free fitting</div>
+          <div class="servis-container-text">When ordering delivery in Moscow and outside the Moscow Ring Road (to the concrete ring), you can order two sizes of one product for trying on and choose the one that fits.</div>
+        </div>
+      </div>
+      <div class="last-glavna">
+        <div class="last-glavna-contayner">
+          <div class="last-glavna-blog">
+            <div class="last-glavna-blog-title">About company</div>
+            <div class="last-glavna-blog-text">Vacancies</div>
+            <div class="last-glavna-blog-text">Contacts</div>
+            <div class="last-glavna-blog-text">Stores</div>
+            <div class="last-glavna-blog-text">News</div>
+            <div class="last-glavna-blog-text">About Us</div>
+            <div class="last-glavna-blog-text">Feedback</div>
+            <div class="last-glavna-blog-text">Offerta</div>
+            <div class="last-glavna-blog-text">Privacy Policy</div>
+          </div>
+          <div class="last-glavna-blog">
+            <div class="last-glavna-blog-title">Help</div>
+            <div class="last-glavna-blog-text">Where is my order?</div>
+            <div class="last-glavna-blog-text">Exchange and return</div>
+            <div class="last-glavna-blog-text">Gift Certificate</div>
+            <div class="last-glavna-blog-text">Payment in installments</div>
+            <div class="last-glavna-blog-text">About Us</div>
+            <div class="last-glavna-blog-text">Honest sign</div>
+            <div class="last-glavna-blog-text">Pick up the size</div>
+          </div>
+          <div class="last-glavna-blog">
+            <div class="last-glavna-blog-title">Brands</div>
+            <div class="last-glavna-blog-text">adidas</div>
+            <div class="last-glavna-blog-text">Jordan</div>
+            <div class="last-glavna-blog-text">New Balance</div>
+            <div class="last-glavna-blog-text">Nike</div>
+            <div class="last-glavna-blog-text">PUMA</div>
+            <div class="last-glavna-blog-text">Vans</div>
+            <div class="last-glavna-blog-text">Oll Brands</div>
+            <div class="last-glavna-blog-text">History Brands</div>
+          </div>
+          <div class="last-glavna-blog">
+            <div class="last-glavna-blog-title">Shops</div>
+            <div class="last-glavna-blog-text">Sneakers</div>
+            <div class="last-glavna-blog-text">Sandals and slates</div>
+            <div class="last-glavna-blog-text">T-shirts and T-shirts</div>
+            <div class="last-glavna-blog-text">Shorts</div>
+            <div class="last-glavna-blog-text">Hoodies</div>
+            <div class="last-glavna-blog-text">Pants</div>
+            <div class="last-glavna-blog-text">Jackets</div>
+          </div>
+          <div class="last-glavna-email">
+            <div class="last-glavna-email-blog">
+              <div class="last-glavna-email-title">Subscribe to newsletter</div>
+              <input type="text" autocomplete="off" placeholder="your e-mail" class="last-glavna-email-input">
+              <button class="last-glavna-email-button">Follow</button>
+              <div class="last-glavna-email-text">By subscribing to the newsletter, you agree to the terms of the offer and privacy policy</div> 
+            </div>
+            <div class="last-glavna-email-images">
+              <img class="last-glavna-email-images-img" src="/imeges1/app_store.png">
+              <img class="last-glavna-email-images-img" src="/imeges1/google_play.png">
+            </div>
+          </div>
+        </div>
+        <div class="info-contayher">
+          <div class="info-contayher-text">© Inventive Retail Group, 2022</div>
+          <div class="info-contayher-parther">
+            <img class="info-contayher-parther-img" src="/imeges1/re-store (1).svg">
+            <img class="info-contayher-parther-img" src="/imeges1/samsung.svg">
+            <img class="info-contayher-parther-img" src="/imeges1/lego.svg">
+            <img class="info-contayher-parther-img" src="/imeges1/xiaomi.svg">
+            <img class="info-contayher-parther-img" src="/imeges1/akit.svg">
+          </div>
+          <div class="info-contayher-parther-icon">
+            <img class="info-contayher-parther-icon-img" src="/imeges1/icons8-tiktok.svg">
+            <img class="info-contayher-parther-icon-img" src="/imeges1/icons8-youtube.svg">
+            <img class="info-contayher-parther-icon-img" src="/imeges1/icons8-vk-circled-30.svg">
+            <img class="info-contayher-parther-icon-img" src="/imeges1/icons8-telegram.svg">
+          </div>
+        </div>
+      </div>
+  </body>
+</html> 

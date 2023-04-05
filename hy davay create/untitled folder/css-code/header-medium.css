@@ -1,0 +1,56 @@
+.header-medium{
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+.left-header-medium{
+  display: flex;
+  height: 30px;
+  width: 200px;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  align-items: center;
+  position: relative;
+  margin-top: 5px;
+}
+.Mens, 
+.Womens,
+.children{
+  border: none;
+  background-color: white;
+  font-family:  'Lora', serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.left-header-medium{
+  height: 40;
+  width: 200px;
+}
+.logo{
+  margin-top: 9px;
+  margin-left: 20px;
+}
+.right-selectiuon-medium{
+  display: flex;
+  height: 30px;
+  width: 250px;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  align-items: center;
+  position: relative;
+  margin-top: 5px;
+}
+.Snicker-Spa,
+.Sneaker-Blog,
+.News{
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  font-family:  'Lora', serif;
+  font-size: 13px;
+}
